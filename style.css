@@ -1,0 +1,625 @@
+body {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  background-color: #12153b;
+  background-image: linear-gradient(
+      to right,
+      rgb(122, 231, 199, 0.2) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgb(122, 231, 199, 0.2) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-attachment: fixed;
+}
+.sekce {
+  min-height: 100vh;
+}
+h1 {
+  font-size: 3.157rem;
+  color: #7ae7c7;
+  margin-bottom: -35px;
+}
+h2 {
+  font-size: 2.369rem;
+  color: #fefefe;
+}
+h3 {
+  font-size: 1.777rem;
+  color: #7ae7c7;
+}
+h4 {
+  font-size: 1.333rem;
+  color: #7ae7c7;
+}
+p {
+  font-size: 1rem;
+  color: #7ae7c7;
+}
+.hero_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-height: 345px;
+}
+.cta {
+  font-family: "doto";
+  font-weight: 900;
+  font-size: 1.333rem;
+  color: rgb(254, 254, 254);
+  background-color: transparent;
+  border-radius: 34px;
+  border: 3px solid #ff00ee;
+  padding: 30px 45px;
+  margin: 50px;
+  transition: background-color 0.3s ease;
+}
+.hero_header a {
+  text-decoration: none;
+}
+.hero_header a:hover {
+  background-color: #ff00ee;
+}
+
+.satelit {
+  max-width: 500px;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+.logo1 {
+  max-width: 120px;
+  margin: 50px;
+}
+.hero_title {
+  margin-left: 50px;
+}
+
+.nav_menu {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(122, 231, 199, 0.5);
+  padding: 10px 20px;
+  border-radius: 34px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  gap: 20px;
+  z-index: 9999;
+}
+.nav_menu a {
+  color: #12153b;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+.nav_menu a:hover {
+  color: #ff00ee;
+}
+
+.bento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 5vh;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.bento .prace1 {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+}
+
+.bento .prace2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.bento .prace3 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.box {
+  background-color: rgba(18, 21, 59, 0.5);
+  backdrop-filter: blur(2px);
+  border: solid 1px #7ae7c7;
+  border-radius: 34px;
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-title {
+  color: #7ae7c7;
+  font-size: 1.333rem;
+  margin: 0 0 20px 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.images-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+}
+
+.images-container img {
+  position: absolute;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.prace1 .images-container img.img-1 {
+  width: 60%;
+  top: 2%;
+  right: 0%;
+  z-index: 3;
+}
+
+.prace1 .images-container img.img-2 {
+  width: 60%;
+  bottom: 6%;
+  left: 0%;
+  z-index: 2;
+}
+
+.prace1 .images-container img.img-3 {
+  width: 70%;
+  bottom: -30%;
+  right: 0%;
+  z-index: 1;
+}
+
+.prace2 .images-container img {
+  width: 80%;
+  top: 15%;
+  left: 10%;
+}
+
+.prace3 .images-container img.img-a {
+  width: 50%;
+  top: 0%;
+  left: 0%;
+  z-index: 2;
+}
+
+.prace3 .images-container img.img-b {
+  width: 55%;
+  top: 9%;
+  right: 0%;
+  z-index: 1;
+}
+.prace3 .project-title {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  z-index: 10;
+  text-align: right;
+}
+
+.bento-about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5vh;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about1 h4,
+.about3 h4,
+.about5 h4 {
+  color: #ff00ee;
+  margin-bottom: 0;
+}
+
+.about2 h4,
+.about4 h4,
+.about6 h4 {
+  color: #fefefe;
+  margin-bottom: 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  box-sizing: border-box;
+  background: transparent;
+  position: relative;
+  height: 100%;
+}
+
+.box p,
+.box.ux1,
+.box.ux2,
+.box.p1,
+.box.p2 {
+  text-align: left;
+  line-height: 1.4;
+}
+
+.box img {
+  width: 70%;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.socialni-site {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+.kontakt-logo img {
+  width: 40%;
+  height: auto;
+  margin: 0;
+}
+.kontakt-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.mojefoto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 50px;
+  min-height: auto;
+}
+.mojefoto img {
+  width: 80%;
+  max-width: 450px;
+  border-radius: 30px;
+  align-self: center;
+  margin-top: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+.bento-contact {
+  /*display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 5vh;
+  height: 100vh;
+  padding: 20px;
+  padding-bottom: 100px;
+  box-sizing: border-box;*/
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-template-rows: 2fr 1fr;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.bento-contact .mojefoto {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+}
+
+.bento-contact .formular {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+}
+
+.bento-contact .socialni-site {
+  grid-row: 2;
+  grid-column: 2;
+  min-width: 2fr;
+}
+
+.bento-contact .kontakt-logo {
+  grid-row: 2;
+  grid-column: 3;
+  min-width: 1fr;
+}
+.mojefoto h2 {
+  color: #ff00ee;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.mojefoto h3 {
+  color: #fefefe;
+  margin: 0px;
+}
+.mojefoto h4 {
+  color: #ff00ee;
+  align-self: end;
+  justify-content: end;
+  margin-right: 35px;
+}
+.mojefoto p {
+  color: #7ae7c7;
+  margin: 0px;
+}
+.telmail {
+  align-self: end;
+  justify-content: end;
+  margin-bottom: 0px;
+}
+.bento-contact {
+  gap: 5vh;
+  padding: 40px;
+  padding-bottom: 120px;
+}
+
+.box.formular {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.form-title {
+  color: #ff00ee;
+  font-size: 2.369rem;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+  height: 100%;
+  margin-top: -40px;
+}
+
+.contact-form {
+  flex: 1 1 50%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.satelit-img {
+  flex: 0 0 auto;
+  max-width: 500px;
+  height: auto;
+  margin-right: -80px;
+  align-self: flex-start;
+  transform: translateY(-50px);
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: transparent;
+  border: 3px solid #fefefe;
+  border-radius: 34px;
+  padding: 15px;
+  color: #7ae7c7;
+  font-size: 1rem;
+  font-family: "Doto", sans-serif;
+  font-weight: 900;
+  outline: none;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.submit-btn {
+  background-color: transparent;
+  border: 3px solid #ff00ee;
+  border-radius: 34px;
+  padding: 12px 40px;
+  color: #fefefe;
+  font-size: 1rem;
+  font-family: "Doto";
+  font-weight: 900;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #ff00ee;
+}
+
+.about1 img {
+  margin-top: -40px;
+}
+.about2 img {
+  margin-top: -80px;
+}
+.about3 img {
+  margin-top: -50px;
+}
+.about4 img {
+  margin-top: -50px;
+}
+.about5 img {
+  margin-top: -20px;
+  min-width: 90%;
+}
+.about6 img {
+  margin-top: -40px;
+  min-width: 90%;
+}
+.button-insta {
+  display: inline-block;
+}
+.socialni-site img {
+  width: 100%;
+  padding: 0px;
+}
+
+.ozvete-se {
+  margin-bottom: 4px;
+}
+.button-insta {
+  border: 5px solid transparent;
+  border-radius: 33px;
+  transition: border 0.2 ease;
+}
+.button-insta:hover {
+  border: 5px solid #ff00ee;
+}
+
+.button-linkedin {
+  border: 5px solid transparent;
+  border-radius: 8px;
+  transition: border 0.2 ease;
+}
+.button-linkedin:hover {
+  border: 5px solid #ff00ee;
+}
+.button-cv {
+  border: 5px solid transparent;
+  border-radius: 34px;
+  transition: border 0.2 ease;
+}
+.button-cv:hover {
+  border: 5px solid #ff00ee;
+}
+
+@media (max-width: 767px) {
+  .hero_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .logo1 {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  .satelit {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .hero_title {
+    margin: 1rem 0;
+  }
+
+  .cta {
+    margin: 1rem 0;
+    padding: 15px 25px;
+  }
+}
+h1 {
+  font-size: clamp(1.5rem, 5vw, 3.2rem);
+}
+h2 {
+  font-size: clamp(1.2rem, 4vw, 2.4rem);
+}
+h3 {
+  font-size: clamp(1rem, 3vw, 1.8rem);
+}
+h4 {
+  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+}
+p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+@media (max-width: 767px) {
+  .form-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .socialni-site {
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .mojefoto img {
+    max-width: 80%;
+    margin: 1rem auto 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .bento-contact {
+    display: grid;
+    grid-template-columns: 1fr; /* jen jeden sloupec */
+    grid-auto-rows: auto;
+    gap: 1.5rem;
+    height: auto;
+  }
+
+  /* Odstraníme všechny staré grid-řádky a grid-sloupce */
+  .bento-contact .mojefoto,
+  .bento-contact .formular,
+  .bento-contact .socialni-site,
+  .bento-contact .kontakt-logo {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    width: 100%;
+  }
+
+  /* Přizpůsobení obrázků */
+  .bento-contact img {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+  }
+
+  /* Formulář a sociální sítě se seskupí pod sebe */
+  .form-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .socialni-site {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
