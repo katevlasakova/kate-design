@@ -3,258 +3,668 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kate Design</title>
-    <!-- základní favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
+    <title>Kate | UX/UI Design & Ilustrace</title>
+    <meta
+      name="description"
+      content="Kateřina Vlasáková - UX/UI designérka. Design, který přenese vaši značku do nové dimenze. Autorské ilustrace a vizuální identita."
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon-16x16.png"
-    />
-    <!-- iOS favicon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/apple-touch-icon.png"
-    />
-    <!-- favicon Windows a další starší typy-->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta name="author" content="Kateřina Vlasáková" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
-
-  <body>
-    <!-- HERO stránka -->
-    <section class="sekce hero">
-      <div class="hero_header">
-        <img
-          class="logo1"
-          src="images/LOGO KATE.svg"
-          alt="gradient logo Kate"
-        />
-        <img
-          class="satelit"
-          src="images/satelit_main.svg"
-          alt="kreslený satelit"
-        />
-        <a href="#contact" class="cta">Navázat kontakt</a>
-      </div>
-      <div class="hero_title">
-        <h1>Design, který přenese vaši značku <br />do nové dimenze.</h1>
-        <br />
-        <h2>UX/UI design, autorské ilustrace a vizuální identita</h2>
-      </div>
-
-      <!--Navigační menu-->
-      <nav class="nav_menu">
-        <a href="#work">Moje práce</a>
-        <a href="#about">O mně</a>
-        <a href="#contact">Kontakt</a>
-      </nav>
-    </section>
-
-    <!-- MOJE PRÁCE stránka -->
-    <section id="work" class="sekce prace">
-      <div class="bento">
-        <!-- První projekt – Leporelo-->
-        <div class="box prace1">
-          <h4 class="project-title">Leporelo pro chovatele morčat</h4>
-          <div class="images-container">
-            <img
-              src="images/leporelo 1.JPG"
-              alt="Přední strana leporela"
-              class="img-1"
-            />
-            <img
-              src="images/leporelo 2.JPG"
-              alt="Rozložené leporelo"
-              class="img-2"
-            />
-            <img
-              src="images/leporelo 3.JPG"
-              alt="Detail s morčetem"
-              class="img-3"
-            />
-          </div>
-        </div>
-
-        <!-- Druhý projekt – logo -->
-        <div class="box prace2">
-          <h4 class="project-title">Návrh loga pro startup značku</h4>
-          <div class="images-container">
-            <img src="images/logo keysaur.svg" alt="navrh loga" />
-          </div>
-        </div>
-
-        <!-- Třetí projekt – Bludiště (vpravo dole) -->
-        <div class="box prace3">
-          <h4 class="project-title">Ilustrované bludiště pro morčata</h4>
-          <div class="images-container">
-            <img
-              src="images/bludiste1.JPG"
-              alt="Bludiště s morčetem"
-              class="img-a"
-            />
-            <img
-              src="images/bludiste2.JPG"
-              alt="Detail bludiště"
-              class="img-b"
-            />
+  <body class="grid-background">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <!-- Logo -->
+      <div class="hero-logo">
+        <div class="logo-wrapper">
+          <div class="logo-inner">
+            <img src="images/LOGO KATE.svg" alt="Kate Logo" />
           </div>
         </div>
       </div>
-    </section>
 
-    <!--O MNĚ stránka-->
-    <section id="about" class="sekce omne">
-      <div class="bento-about">
-        <div class="box about1">
-          <h4>Tvorba a ilustrace</h4>
-          <p>
-            Pozoruji a kreslím svět okolo sebe. Ilustruji ručně
-            i&nbsp;digitálně.
-            <br /><br />
-            Každá ilustrace vzniká přímo pro konkrétní projekt, aby značka měla
-            vlastní charakter a&nbsp;nebyla zaměnitelná.
-          </p>
-          <img src="images/saturn.svg" alt="kreslený saturn" />
-        </div>
-        <div class="box about2">
-          <h4>UI Design</h4>
-          <p class="ux1">
-            Pracuji s&nbsp;barvami, typografií, tlačítky, rozvržením
-            a&nbsp;hierarchí.
-          </p>
-          <p class="ux2">
-            Za vším hledám hlubší smysl. Vizuální design je pro mě způsob, jak
-            předat myšlenku nebo příběh.
-          </p>
-          <img src="images/radar.svg" alt="kreslený radar" />
-        </div>
-        <div class="box about3">
-          <h4>UX Design</h4>
-          <p>
-            Fascinuje mě, jak život každého člověka je unikátní. <br /><br />
-            Proto se vzdělávám napříč různými obory, abych dokázala lépe rozumět
-            lidským potřebám.
-          </p>
-          <img src="images/teleskop.svg" alt="kreslený teleskop" />
-        </div>
-        <div class="box about4">
-          <h4>Psychologie</h4>
-          <p>
-            Věřím, že dobrý design není jen o&nbsp;estetice, ale o&nbsp;tom, jak
-            se u&nbsp;něj člověk cítí.
-            <br /><br />Tvořím vizuály, které uklidňují, nezatěžují mysl
-            a&nbsp;získávají si důvěru.
-          </p>
-          <img src="images/raketa.svg" alt="kreslená raketa" />
-        </div>
-        <div class="box about5">
-          <h4>Nástroje</h4>
-          <p>
-            Figma, <br />HTML a CSS,<br />
-            Affinity Designer,<br />
-            Fixy a papír
-          </p>
-          <img src="images/pc a mesic.svg" alt="kreslený počítač" />
-        </div>
-        <div class="box about6">
-          <h4>Brand Design</h4>
-          <p class="p1">
-            Než začnu tvořit logo nebo vizuální identitu, zkoumám příběh značky.
-          </p>
-          <p class="p2">
-            Mým cílem je vytvořit její tvář, která je autentická a&nbsp;mluví
-            hlasitěji než slova.
-          </p>
-          <img src="images/helma.svg" alt="kreslená helma" />
-        </div>
+      <!-- CTA Button -->
+      <div class="hero-cta">
+        <button
+          class="btn-glow-magenta"
+          onclick="document.getElementById('kontakt').scrollIntoView({behavior: 'smooth'})"
+        >
+          Navázat kontakt
+        </button>
+      </div>
+
+      <!-- Satellite Illustration -->
+      <div class="satellite-wrapper">
+        <svg
+          width="320"
+          height="228"
+          viewBox="0 0 320 228"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          style="color: var(--primary)"
+        >
+          <g class="animate-float">
+            <rect
+              x="110"
+              y="70"
+              width="60"
+              height="45"
+              rx="4"
+              style="stroke: hsla(180, 100%, 45%, 0.8)"
+            />
+            <rect
+              x="115"
+              y="75"
+              width="50"
+              height="35"
+              rx="2"
+              style="stroke: hsla(180, 100%, 45%, 0.4)"
+            />
+            <ellipse
+              cx="140"
+              cy="55"
+              rx="20"
+              ry="8"
+              style="stroke: hsla(180, 100%, 45%, 0.8)"
+            />
+            <line
+              x1="140"
+              y1="63"
+              x2="140"
+              y2="70"
+              style="stroke: hsla(180, 100%, 45%, 0.6)"
+            />
+            <circle
+              cx="140"
+              cy="52"
+              r="3"
+              style="stroke: hsla(180, 100%, 45%, 0.6)"
+            />
+            <rect
+              x="30"
+              y="75"
+              width="75"
+              height="35"
+              rx="2"
+              style="stroke: hsla(180, 100%, 45%, 0.8)"
+            />
+            <line
+              x1="50"
+              y1="75"
+              x2="50"
+              y2="110"
+              style="stroke: hsla(180, 100%, 45%, 0.4)"
+            />
+            <line
+              x1="70"
+              y1="75"
+              x2="70"
+              y2="110"
+              style="stroke: hsla(180, 100%, 45%, 0.4)"
+            />
+            <line
+              x1="90"
+              y1="75"
+              x2="90"
+              y2="110"
+              style="stroke: hsla(180, 100%, 45%, 0.4)"
+            />
+            <line
+              x1="30"
+              y1="92"
+              x2="105"
+              y2="92"
+              style="stroke: hsla(180, 100%, 45%, 0.4)"
+            />
+            <rect
+              x="175"
+              y="75"
+              width="75"
+              height="35"
+              rx="2"
+              style="stroke: hsla(180, 100%, 45%, 0.8)"
+            />
+            <line
+              x1="195"
+              y1="75"
+              x2="195"
+              y2="110"
+              style="stroke: hsla(180, 100%, 45%, 0.4)"
+            />
+            <line
+              x1="215"
+              y1="75"
+              x2="215"
+              y2="110"
+              style="stroke: hsla(180, 100%, 45%, 0.4)"
+            />
+            <line
+              x1="235"
+              y1="75"
+              x2="235"
+              y2="110"
+              style="stroke: hsla(180, 100%, 45%, 0.4)"
+            />
+            <line
+              x1="175"
+              y1="92"
+              x2="250"
+              y2="92"
+              style="stroke: hsla(180, 100%, 45%, 0.4)"
+            />
+            <rect
+              x="105"
+              y="85"
+              width="5"
+              height="15"
+              style="stroke: hsla(180, 100%, 45%, 0.6)"
+            />
+            <rect
+              x="170"
+              y="85"
+              width="5"
+              height="15"
+              style="stroke: hsla(180, 100%, 45%, 0.6)"
+            />
+            <circle
+              cx="125"
+              cy="92"
+              r="5"
+              style="stroke: hsla(180, 100%, 45%, 0.6)"
+            />
+            <circle
+              cx="155"
+              cy="92"
+              r="5"
+              style="stroke: hsla(180, 100%, 45%, 0.6)"
+            />
+          </g>
+          <g class="animate-pulse-glow"></g>
+          <circle
+            cx="20"
+            cy="30"
+            r="1.5"
+            style="fill: hsla(180, 100%, 45%, 0.6)"
+          />
+          <circle
+            cx="260"
+            cy="150"
+            r="1"
+            style="fill: hsla(180, 100%, 45%, 0.4)"
+          />
+          <circle
+            cx="50"
+            cy="160"
+            r="1.5"
+            style="fill: hsla(180, 100%, 45%, 0.5)"
+          />
+        </svg>
+      </div>
+
+      <!-- Main Content -->
+      <div class="hero-content">
+        <h1 class="heading-pixel">
+          Design, který přenese vaši značku do nové dimenze.
+        </h1>
+        <h2 class="font-mono">
+          UX/UI design, autorské ilustrace a vizuální identita
+        </h2>
       </div>
     </section>
 
-    <!--KONTAKT stránka-->
-    <section id="contact" class="sekce kontakt">
-      <div class="bento-contact">
-        <div class="box mojefoto">
-          <h2>Kateřina Vlasáková</h2>
-          <h3>UX/UI designérka</h3>
+    <!-- Work Section -->
+    <section id="moje-prace">
+      <div class="container">
+        <div class="work-grid">
+          <!-- Project 1 -->
+          <div>
+            <h3 class="heading-pixel">Leporelo pro chovatele morčat</h3>
+            <div class="glow-card work-item">
+              <div class="work-placeholder">
+                <img src="images/leporelo 1.JPG" alt="leporelo přední strana" />
+              </div>
+              <p
+                class="font-mono"
+                style="
+                  text-align: left;
+                  color: var(--muted-foreground);
+                  font-size: 0.875rem;
+                "
+              >
+                Ilustrované leporelo pro začínající chovatele morčat
+              </p>
+            </div>
+          </div>
 
-          <p>
-            Většinu času trávím v Praze. Spolupráce je možná osobně i&nbsp;na
-            dálku.
-          </p>
-
-          <img src="images/me.jpg" alt="profilová fotka" />
-          <h4 class="ozvete-se">Ozvěte se mi:</h4>
-          <p class="telmail">+420 722 115 789 <br />uxui.bykate@gmail.com</p>
+          <!-- Project 2 -->
+          <div class="offset">
+            <div style="text-align: left; margin-bottom: 1rem">
+              <h3 class="heading-pixel">Bludiště pro morčata</h3>
+            </div>
+            <div class="glow-card work-item">
+              <div class="work-placeholder">
+                <img src="images/bludiste1.JPG" alt="bludiště morče" />
+              </div>
+              <p
+                class="font-mono"
+                style="
+                  text-align: left;
+                  color: var(--muted-foreground);
+                  font-size: 0.875rem;
+                "
+              >
+                Ručně malované bludiště pro morčata
+              </p>
+            </div>
+          </div>
         </div>
-
-        <div class="box formular">
-          <h4 class="form-title">Napište mi</h4>
-
-          <div class="form-wrapper">
-            <form
-              action="https://formsubmit.co/uxui.bykate@gmail.com"
-              method="POST"
-              class="contact-form"
+        <!-- Project 3 -->
+        <div>
+          <h3 class="heading-pixel">Návrh loga</h3>
+          <div class="glow-card work-item">
+            <div class="work-placeholder">
+              <img class="keysaur"
+                src="images/logo keysaur.svg"
+                alt="leporelo přední strana"/>
+            </div>
+            <p
+              class="font-mono"
+              style="
+                text-align: left;
+                color: var(--muted-foreground);
+                font-size: 0.875rem;
+              "
             >
-              <input
-                type="hidden"
-                name="_subject"
-                value="Nová zpráva z portfolia!"
-              />
-              <input type="hidden" name="_captcha" value="false" />
-              <input
-                type="text"
-                name="jmeno"
-                placeholder="Vaše jméno"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Váš e-mail"
-                required
-              />
-              <textarea name="zprava" placeholder="Zpráva" required></textarea>
-              <button type="submit" class="submit-btn">ODESLAT</button>
-            </form>
-            <img
-              class="satelit-img"
-              src="images/satelit.svg"
-              alt="kreslený satelit"
-            />
+              Logo pro startup značku vyvíjející hardware
+            </p>
           </div>
         </div>
+    </section>
 
-        <div class="box socialni-site">
-          <a href="" class="button-cv"
-            ><img src="images/CV icon.svg" alt="ikona životopis"
-          /></a>
-          <a href="https://www.instagram.com/uxui_bykate/" class="button-insta"
-            ><img src="images/insta icon.svg" alt="ikona instagram"
-          /></a>
-          <a href="" class="button-linkedin"
-            ><img src="images/linkedin icon.svg" alt="ikona LinkedIn"
-          /></a>
+    <!-- About Section -->
+    <section id="o-mne">
+      <div class="container">
+        <div class="glow-card about-header">
+          <h2 class="heading-pixel">O mně</h2>
+          <h3 class="font-mono" style="color: var(--muted-foreground)">
+            Co umím a co mě baví
+          </h3>
         </div>
 
-        <div class="box kontakt-logo">
-          <img src="images/LOGO KATE.svg" alt="logo Kate" />
+        <div class="skills-grid">
+          <div class="glow-card skill-card">
+            <div class="skill-header">
+              <svg
+                class="text-accent"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="13.5" cy="6.5" r=".5"></circle>
+                <circle cx="17.5" cy="10.5" r=".5"></circle>
+                <circle cx="8.5" cy="7.5" r=".5"></circle>
+                <circle cx="6.5" cy="12.5" r=".5"></circle>
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"
+                ></path>
+              </svg>
+              <h3 class="heading-pixel text-accent">Tvorba a ilustrace</h3>
+            </div>
+            <p class="font-mono">
+              Pozoruji a kreslím svět okolo sebe. Ilustruji ručně i digitálně.
+            </p>
+            <p class="font-mono detail">
+              Každá ilustrace vzniká přímo pro konkrétní projekt, aby značka
+              měla vlastní charakter a nebyla zaměnitelná.
+            </p>
+          </div>
+
+          <div class="glow-card skill-card">
+            <div class="skill-header">
+              <svg
+                class="text-primary"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                <line x1="8" x2="16" y1="21" y2="21"></line>
+                <line x1="12" x2="12" y1="17" y2="21"></line>
+              </svg>
+              <h3 class="heading-pixel text-primary">UI Design</h3>
+            </div>
+            <p class="font-mono">
+              Pracuji s barvami, typografií, tlačítky, rozvržením a hierarchií.
+            </p>
+            <p class="font-mono detail">
+              Za vším hledám hlubší smysl. Vizuální design je pro mě způsob, jak
+              předat myšlenku nebo příběh.
+            </p>
+          </div>
+
+          <div class="glow-card skill-card">
+            <div class="skill-header">
+              <svg
+                class="text-primary"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="m10.065 12.493-6.18 1.318a.934.934 0 0 1-1.108-.702l-.537-2.15a1.07 1.07 0 0 1 .691-1.265l13.504-4.44"
+                ></path>
+                <path d="m13.56 11.747 4.332-.924"></path>
+                <path d="m16 21-3.105-6.21"></path>
+                <path
+                  d="M16.485 5.94a2 2 0 0 1 1.455-2.425l1.09-.272a1 1 0 0 1 1.212.727l1.515 6.06a1 1 0 0 1-.727 1.213l-1.09.272a2 2 0 0 1-2.425-1.455z"
+                ></path>
+                <path d="m6.158 8.633 1.114 4.456"></path>
+                <path d="m8 21 3.105-6.21"></path>
+              </svg>
+              <h3 class="heading-pixel text-primary">UX Design</h3>
+            </div>
+            <p class="font-mono">
+              Fascinuje mě, jak život každého člověka je unikátní.
+            </p>
+            <p class="font-mono detail">
+              Proto se vzdělávám napříč různými obory, abych dokázala lépe
+              rozumět lidským potřebám.
+            </p>
+          </div>
+
+          <div class="glow-card skill-card">
+            <div class="skill-header">
+              <svg
+                class="text-accent"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
+                ></path>
+                <path
+                  d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"
+                ></path>
+                <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
+                <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
+                <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
+                <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
+                <path d="M19.938 10.5a4 4 0 0 1 .585.396"></path>
+                <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
+                <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
+              </svg>
+              <h3 class="heading-pixel text-accent">Psychologie</h3>
+            </div>
+            <p class="font-mono">
+              Věřím, že dobrý design není jen o estetice, ale o tom, jak se u
+              něj člověk cítí.
+            </p>
+            <p class="font-mono detail">
+              Tvořím vizuály, které uklidňují, nezatěžují mysl a získávají si
+              důvěru.
+            </p>
+          </div>
+
+          <div class="glow-card skill-card">
+            <div class="skill-header">
+              <svg
+                class="text-primary"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"
+                ></path>
+                <path
+                  d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"
+                ></path>
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+              </svg>
+              <h3 class="heading-pixel text-primary">Nástroje</h3>
+            </div>
+            <p class="font-mono">
+              Figma, HTML a CSS, Affinity Designer, Fixy a papír
+            </p>
+          </div>
+
+          <div class="glow-card skill-card">
+            <div class="skill-header">
+              <svg
+                class="text-primary"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon
+                  points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"
+                ></polygon>
+              </svg>
+              <h3 class="heading-pixel text-primary">Brand Design</h3>
+            </div>
+            <p class="font-mono">
+              Než začnu tvořit logo nebo vizuální identitu, zkoumám příběh
+              značky.
+            </p>
+            <p class="font-mono detail">
+              Mým cílem je vytvořit její tvář, která je autentická a mluví
+              hlasitěji než slova.
+            </p>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Profile Card -->
+          <div class="glow-card profile-card">
+            <h2 class="heading-pixel">Kateřina Vlasáková</h2>
+            <p class="role font-mono">UX/UI designérka</p>
+            <p class="bio font-mono">
+              Většinu času trávím v Praze. Spolupráce je možná osobně i na
+              dálku.
+            </p>
+
+            <div class="profile-photo">
+              <img src="images/me.jpg" alt="Kateřina Vlasáková" />
+            </div>
+
+            <div class="contact-info">
+              <h3 class="heading-pixel text-accent">Ozvěte se mi:</h3>
+              <p class="font-mono">+420 722 115 789</p>
+              <p class="font-mono">uxui.bykate@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Form & Socials -->
+          <div>
+            <div class="glow-card form-card">
+              <h3 class="heading-pixel">Napište mi</h3>
+              <form>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Vaše jméno"
+                  required
+                  class="input-space"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Váš e-mail"
+                  required
+                  class="input-space"
+                />
+                <textarea
+                  name="message"
+                  placeholder="Zpráva"
+                  rows="5"
+                  required
+                  class="input-space"
+                ></textarea>
+                <button type="submit" class="btn-submit">ODESLAT</button>
+              </form>
+            </div>
+
+            <div class="social-grid">
+              <div class="glow-card social-card">
+                <div class="social-links">
+                  <a href="#" class="social-link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                      ></path>
+                      <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                      <path d="M10 9H8"></path>
+                      <path d="M16 13H8"></path>
+                      <path d="M16 17H8"></path>
+                    </svg>
+                  </a>
+                  <a href="#" class="social-link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect
+                        width="20"
+                        height="20"
+                        x="2"
+                        y="2"
+                        rx="5"
+                        ry="5"
+                      ></rect>
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      ></path>
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                  </a>
+                  <a href="#" class="social-link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      ></path>
+                      <rect width="4" height="12" x="2" y="9"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="glow-card social-card">
+                <div class="logo-wrapper">
+                  <div class="logo-inner">
+                    <img
+                      style="width: 3.5rem; height: 3.5rem; object-fit: contain"
+                      src="images/LOGO KATE.svg"
+                      alt="Kate Logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-mint">
+        <ul>
+          <li>
+            <button
+              onclick="document.getElementById('moje-prace').scrollIntoView({behavior: 'smooth'})"
+            >
+              Moje práce
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="document.getElementById('o-mne').scrollIntoView({behavior: 'smooth'})"
+            >
+              O mně
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="document.getElementById('kontakt').scrollIntoView({behavior: 'smooth'})"
+            >
+              Kontakt
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </body>
 </html>
